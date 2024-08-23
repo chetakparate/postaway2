@@ -5,7 +5,7 @@ import {
   userLogout,
   userRegisteration,
   logoutAllDevices,
-  updateAvatar,
+  // updateAvatar,
   userDetails,
   allUsersDetails,
   updateUser

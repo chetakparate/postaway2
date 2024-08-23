@@ -2,7 +2,7 @@ import {
   userLoginRepo,
   userRegisterationRepo,
   logoutFromAllDevices,
-  updateUserAvatar,
+  // updateUserAvatar,
   getUserDetails,
   getAllUserDetails,
   userUpdate,
