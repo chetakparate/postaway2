@@ -2,11 +2,11 @@ import { getCommentsByPostId, addAComment, updateAComment, deleteAComment } from
 import { customErrorHandler } from '../../middlewares/errorHandler.js';
 
 // get comments for a post by post ID
-export const allCommentsForPost = (req, res, next) => {
+export const allCommentsForPost = async (req, res, next) => {
 
   const postId = req.params.postId;
   if (postId) {
-    const postWithComments = getCommentsByPostId(postId);
+    const postWithComments = await getCommentsByPostId(postId);
     if (postWithComments.length > 0)
       res.json({ status: "success", postWithComments });
     else
