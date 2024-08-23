@@ -17,6 +17,10 @@ const app = express();
 app.use(cookieParser());
 app.use(express.json());
 
+app.use("/", (req, res) => {
+  res.json("Welcome to PostAway2!");
+})
+
 app.use("/api/users", userRouter);
 app.use("/api/posts", postRouter);
 app.use("/api/comments", commentRouter);
